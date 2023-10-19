@@ -1,0 +1,245 @@
+.container_ft {
+    width: 280px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.ft_line {
+    width: 100%;
+    height: 1px;
+    background-color: #dddfe2;
+}
+
+.ft_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 16px 0px;
+}
+
+.ft1_map_bg {
+    width: 100%;
+    height: 100px;
+    background-image: url(https://cdn6.agoda.net/images/MAPS-1213/default/bkg-map-entry.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: red;
+}
+
+.ft1_map_des {
+    font-size: 16px;
+    color: #000;
+}
+
+.ft1_search {
+    padding: 8px;
+    border-radius: 20px;
+    border-color: #2a2a2e;
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.ft1_search_input {
+    border: none;
+    width: 100%;
+    height: 100%;padding-left: 8px;
+}
+
+.ft1_price_flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.ft1_price_box {
+    width: 50%;
+}
+
+.ft1_price_input {
+    width: 80%;
+}
+
+.ft_cb_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 8px;
+}
+
+.ft_cb_size {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+
+.ft_cb_size:hover {
+    color: #488bf8;
+}
+
+.ft_cb_des {
+    margin-left: 8px;
+}
+
+.ft_rp {
+    display: none;
+    padding: 8px 0px;
+}
+
+.ft_1_rp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ft_2_rp {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.ft_bar_rp {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: #edeff3;
+    width: 80%;
+    border-radius: 30px;
+    height: 48px;
+}
+
+.ft_button_rp {
+    background-color: none;
+    border: none;
+    font-size: 12px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 8px;
+}
+
+.ft_icon_rp {
+    font-size: 24px;
+}
+
+.ft_button_icon_rp {
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft_des_button_rp {
+    font-size: 8px;
+}
+
+.ft_button_2_rp {
+    background-color: #fff;
+    border-color: #666;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 16px;
+    color: #333;
+    padding: 4px 8px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 4px;
+}
+.ft_button_2 {
+    background-color: #fff;
+    border-color: #666;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 24px;
+    color: #333;
+    padding: 8px 16px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0px;
+}
+
+.ft_button_2:hover {
+    color: #488bf8;
+    border-color: #488bf8;
+}
+.ft_button_2_rp:hover {
+    color: #488bf8;
+    border-color: #488bf8;
+}
+
+.ft_icon_2_rp {
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .container_ft {
+        width: 200px;
+    }
+
+    .ft_cb_size {
+        font-size: 12px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .container_ft {
+        width: 100%;
+        display: block;
+    }
+
+    .ft_grid {
+        display: none;
+    }
+
+    .ft_line {
+        display: none;
+    }
+
+    .ft_rp {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background-color: #fff;
+    }
+
+    .ft_button_2_rp {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ft_button_2_rp {
+        font-size: 12px;
+    }
+}
